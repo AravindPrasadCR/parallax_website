@@ -1,0 +1,348 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+}
+
+/* Home */
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+#header .logo {
+    font-size: 35px;
+    color: #1a6e0b;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+#header ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 12px;
+    font-weight: 600;
+    color: #1a6e0b;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+    color: #fff;
+    background: #1a6e0b;
+}
+
+
+.home {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+}
+
+.home img {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.home #text {
+    position: absolute;
+    font-size: 150px;
+    color: #1a6e0b;
+    text-align: center;
+    margin-top: 520px;
+    line-height: 80px;
+    font-family: 'Rancho', cursive;
+    transform: translateY(-50%);
+}
+
+.home #text span {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+#btn {
+    position: absolute;
+    padding: 8px 20px;
+    display: inline-block;
+    text-decoration: none;
+    background: #fff;
+    opacity: 0.4;
+    color: #094b65;
+    font-size: 20px;
+    top: 470px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(100px);
+}
+
+
+/* body */
+
+
+.title {
+    background: white;
+    padding: 60px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.title h1 {
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+/* About */
+
+.about_text {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    height: 50vh;
+    text-align: center;
+    justify-content: center;
+    padding: 8% 10%;
+
+}
+
+.about_text p {
+    color: #fffafa;
+    font-size: 30px;
+    font-weight: 800px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.about .background {
+
+    background-image: url(img/about.jpg);
+
+}
+
+/* Packages */
+
+.packages .content {
+    flex-direction: row;
+    gap: 100px;
+    text-align: center;
+    color: var(--color);
+    min-width: 100%;
+    min-height: 75vh;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.packages .card {
+    display: flex;
+    max-width: 320px;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
+    box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
+}
+
+.card .img {
+    width: 90%;
+    height: 200px;
+    background-color: lightgrey;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.img-1 {
+    background-image: url(/img/ancient.jpg);
+}
+
+.img-2 {
+    background-image: url(/img/honeymoon.jpg);
+}
+
+.img-3 {
+    background-image: url(/img/adventure.jpg);
+}
+
+.text h3 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.packages .background {
+
+    background-image: url(img/package.jpg);
+
+}
+
+/* Contact */
+
+.contact_form {
+    position: absolute;
+    padding-left: 60%;
+    top: 60px;
+    align-items: left;
+    min-height: 75vh;
+    justify-content: center;
+}
+
+.contact_form input {
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    margin: 10px;
+}
+
+.contact_form .btn-2 {
+    background-color: #fffefe;
+    border: none;
+    color: rgb(129, 111, 111);
+    padding: 5px 32px;
+    margin: 10px 0 0 145px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+.connect .background {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url(img/contact_us.jpg);
+}
+
+/* Review */
+
+.review-content {
+    background-color: #000;
+    height: 50vh;
+    text-align: center;
+    justify-content: center;
+    opacity: 0.5;
+}
+
+.review-text {
+    color: #ffffff;
+    justify-content: center;
+    font-size: 20px;
+    padding-top: 140px;
+    padding-bottom: 85px;
+}
+
+.review .background {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(img/review.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #dadddf;
+    padding: 0 15% 2%;
+}
+
+.footer-content {
+    gap: 200px;
+}
+
+
+.social-network a {
+    font-size: 30px;
+    transition: all 0.3s ease-out 0s;
+    color: #000000;
+    padding: 0 10px;
+}
+
+.social-network a :hover {
+    transform: translateY(-0.2rem);
+}
+
+.links a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+}
